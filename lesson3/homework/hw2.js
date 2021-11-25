@@ -10,26 +10,22 @@
     var cars = ["Mitsubishi", "Honda", "Toyota", "Suzuki", "Audi", "BMW", "Honda", "Mercedes"];
 
     var a = prompt("Enter the name of the car: "); 
-    counter = 0;
+    var counter = 0;
 
 	for (var i = 0; i < cars.length; i++){
-        counter++;
 		if (cars[i] == a){
-            var b = prompt("Enter the second name of the car: ");
-            var carIndex = cars.indexOf(a);
-            cars.splice(carIndex+1, 0, b);
-            console.log(cars);
-            break;}
+            counter++;
         }
-
-
-        if (cars[i] !== a) {
+    }
+            
+        if (counter > 0){
+            var carIndex = cars.indexOf(a);
             var b = prompt("Enter the second name of the car: ");
-            cars.push(a);
+            cars.splice(carIndex + 1, 0, b);
             console.log(cars);
-          
-        } else if(cars[a] == a){
-            cars.splice(a+1,0,a);
+        }
+        else {
+            cars.push(a);
             console.log(cars);
         }
         
