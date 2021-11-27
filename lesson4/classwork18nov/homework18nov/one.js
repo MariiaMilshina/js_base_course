@@ -7,43 +7,29 @@ var a;
 var b;
 var sign;
 var result;
-            
-            function add(a, b) {
-                return a + b;
-            }
-            
-    
-            function sub(a, b) {
-                return a - b;
-            }
-    
-            function mul(a, b) {
-                return a * b;
-            }
-    
-            function div(a, b) {
-                return a / b;
-            }
-
+        
             a = +prompt("Enter first num");
             sign = prompt("Enter your sign");
             b = +prompt("Enter your num");
-
+            
+function calculate (a,b,sign){
 switch (sign) {
     case "+":
-        result = add(a, b);
+        result = a + b;
         break;
     case "-":
-        result = sub(a, b);
+        result = a - b;
         break;
     case "*":
-        result = mul(a, b);
+        result = a * b;
         break;
     case "/":
-        result = div(a, b);
+        result =a / b;
         break;
     default:
         document.write("<p><b style='color:red'>" + sign + "</b> - не является знаком арифметической операции.</p>");
 }
-
 document.write(result);
+}
+calculate(a,b,sign);
+
