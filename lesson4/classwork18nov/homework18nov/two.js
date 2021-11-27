@@ -11,7 +11,7 @@ var result = Math.pow(a,b);
 if (a == 0 && b ==0){
     return("Error!")
 } else {
-    return(result);
+    return result ;
 }
 }
 
