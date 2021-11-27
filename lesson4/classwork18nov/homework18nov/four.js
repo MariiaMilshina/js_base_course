@@ -11,7 +11,7 @@
             var prev = 0;
             var next = 1;
             
-     for (i = 1; i < a; i++){
+     for (let i = 1; i < a; i++){
     let c = next + prev;
     prev = next;
     next = c;
