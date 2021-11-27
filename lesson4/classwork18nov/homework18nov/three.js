@@ -5,9 +5,7 @@
 		}*/
 
         function isEven(num) {
-			if(num%2 == 0){
-                return("Even");
-            } else {
-                return("Odd");
-            }
+			var result = (num%2 == 0) ? "Even" : "Odd";
+			console.log(result);
 		}
+isEven;
