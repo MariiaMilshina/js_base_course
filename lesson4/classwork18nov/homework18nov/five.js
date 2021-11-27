@@ -39,44 +39,34 @@ function game(comp, user) {
         document.write("ничья");
     }
 
-    else if (comp === "ножницы"){
-      if  (user === "бумага") {
+    else if (comp === "ножницы" && user === "бумага") {
             document.write("Вы проиграли");
         }
-
-    } else if (comp === "камень"){
-        if  (user === "бумага") {
+    else if (comp === "камень"&& user === "бумага") {
             document.write("Вы выиграли");
     }
-}
-
-else if (comp === "бумага"){
-        if  (user === "ножницы") {
+    
+    else if (comp === "бумага" && user === "ножницы") {
             document.write("Вы выиграли");
     }
-}
 
-else if (comp === "ножницы"){
-    if  (user === "камень") {
+    else if (comp === "ножницы" && user === "камень") {
         document.write("Вы выиграли");
 }
-}
 
-else if (comp === "камень"){
-    if  (user === "бумага") {
+
+    else if (comp === "камень" && user === "бумага") {
         document.write("Вы выиграли");
 }
-}
 
-else if (comp === "бумага"){
-    if  (user === "камень") {
+    else if (comp === "бумага" && user === "камень") {
         document.write("Вы выиграли");
 }
-}
-else if (user === "") {
+
+    else if (user === "") {
     document.write("Вы должны записать выбранный Вами предмет в поле.");
 
-} else if (user !== "камень","бумага","ножницы") {
+} else if (user !== "камень" || "бумага" || "ножницы") {
     document.write("Нельзя выбирать этот предмет -> " + user);
 }
 
